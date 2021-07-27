@@ -1,0 +1,63 @@
+ul {
+  list-style: none;
+}
+
+form {
+  display: block;
+  margin: 20px;
+}
+body {
+  box-sizing: border-box;
+}
+
+h3 {
+  font-size: 35px;
+  text-align: left;
+  margin: 40px;
+}
+
+.local {
+  color: rgb(148, 147, 147);
+}
+
+.days {
+  color: purple;
+}
+
+.current-city {
+  font-size: 40px;
+  font-weight: 600;
+  color: black;
+}
+
+.border {
+  border-radius: 1px;
+  border: grey solid 1px;
+  margin-top: 40px;
+  max-width: 600px;
+  padding: 20px;
+  display: block;
+  text-align: center;
+}
+
+.credit {
+  text-align: center;
+  display: block;
+}
+
+.details {
+  color: hotpink;
+  text-decoration: none;
+}
+
+.weather {
+  margin-top: 80px;
+}
+
+.current-temp {
+  font-size: 70px;
+}
+
+.conversion {
+  font-size: 15px;
+}

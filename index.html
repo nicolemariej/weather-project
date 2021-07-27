@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link href="src/styles.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="border">
+        <div class="row">
+          <div class="col-2">London</div>
+          <div class="col-2">Paris</div>
+          <div class="col-2">New York</div>
+          <div class="col-2">Sydney</div>
+        </div>
+        <br />
+        <form id="city-search">
+          <input id="city-text" type= "text" placeholder="Enter your City here" />
+          <button class="btn btn-primary">Search</button>
+          <button class="btn btn-success" id="current-button">Current</button>
+        </form>
+        <ul class = "local">
+              <div class="row">
+                  <div class="col-6">
+          <li class = "current-city"><img src= "https://ssl.gstatic.com/onebox/weather/64/cloudy.png"><h1>London</h1></li>
+          <li><h2>16:00</h2></li>
+          <li>Cloudy</li>
+              </div>
+
+              <div class="col-6 weather">
+            
+          <li>Precipitation: 70%</li>
+          <li>Wind: 40kph</li>
+          
+              </div>
+          
+              </div>
+        </ul>
+        <h3><span id = "current-temp">☁ 14° </span><span class = "conversion"><a href="#" id ="celsius">°C</a>|<a href="#" id = "fahrenheit">°F</a></span></h3>
+        <div class="row days">
+          <div class="col-2">Mon</div>
+          <div class="col-2">Tue</div>
+          <div class="col-2">Wed</div>
+          <div class="col-2">Thu</div>
+          <div class="col-2">Fri</div>
+        </div>
+           <div class="row">
+          <div class="col-2">🌧10°</div>
+          <div class="col-2">🌦15°</div>
+          <div class="col-2">🌤16°</div>
+          <div class="col-2">☀19°</div>
+          <div class="col-2">🌦15°</div>
+        </div>
+        </div> 
+      </div>
+      <p class= "credit">This page was created by <a href= "https://www.linkedin.com/in/nicolemairejones/" class= "details">Nicole</a>.</p>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
